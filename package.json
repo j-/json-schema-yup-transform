@@ -2,9 +2,12 @@
   "name": "json-schema-yup-transformer",
   "version": "1.0.0",
   "description": "Transforms JSON Schema to a Yup Schema",
-  "main": "index.html",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "parcel build src/index.ts --out-dir dist",
+    "build": "tsc",
     "test": "jest",
     "coverage": "jest --coverage"
   },
@@ -20,7 +23,6 @@
     "@types/lodash": "^4.14.149",
     "@types/yup": "^0.26.33",
     "jest": "^25.1.0",
-    "parcel-bundler": "^1.12.4",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   },
